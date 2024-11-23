@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background">
+
+    <!-- Main Activity Section -->
+    <TextView
+        android:id="@+id/tvActivityHeadingCycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cycling :"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp"/>
+
+    <!-- Lottie Animation View -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationViewCycle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        app:lottie_fileName="cyclinggif.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp">
+
+            <ProgressBar
+                android:id="@+id/progress_distance_cycle"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar_steps" />
+
+            <ImageView
+                android:id="@+id/cycle_icon_cycle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cycling" />
+
+            <!-- TextView for distance -->
+            <TextView
+                android:id="@+id/tvDistanceCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 km"
+                android:layout_below="@id/progress_distance_cycle"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp">
+
+            <ProgressBar
+                android:id="@+id/progress_calories_cycle"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar_calories" />
+
+            <ImageView
+                android:id="@+id/calories_icon_cycle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/burn" />
+
+            <!-- TextView for Calories -->
+            <TextView
+                android:id="@+id/tvCaloriesCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Calories"
+                android:layout_below="@id/progress_calories_cycle"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ProgressBar
+                android:id="@+id/progress_duration_cycle"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_progress_bar_distance" />
+
+            <ImageView
+                android:id="@+id/duration_icon_cycle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/baseline_timer_24" />
+
+            <TextView
+                android:id="@+id/tvDurationCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Secs"
+                android:layout_below="@id/progress_duration_cycle"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/card_border"
+        android:elevation="4dp"
+        android:layout_margin="6dp">
+
+        <!-- Timer TextView -->
+        <TextView
+            android:id="@+id/durationTextViewCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration: 00:00"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/DistanceGoalCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance Goal: 10000 meters"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/CaloriesGoalCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories Goal: 500 cals"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/DurationGoalCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Duration Goal: 3600 seconds"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnStartCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_button" />
+
+        <Button
+            android:id="@+id/btnSetTargetCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET TARGET"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

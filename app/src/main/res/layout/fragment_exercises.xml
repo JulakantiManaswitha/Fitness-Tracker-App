@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/tvExercisesHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercises :"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginBottom="4dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVExercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#01F6F6E1"
+        android:layout_below="@id/tvExercisesHeading"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>

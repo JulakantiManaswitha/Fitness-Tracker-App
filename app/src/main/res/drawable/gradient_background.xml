@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/light_green"
+                android:endColor="@color/light_blue"
+                android:angle="270"/> <!-- Change angle for different gradient direction -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FitnessTrackerApp</string>
+    <string name="side_plank"> Benefits of Plank \n1) Helps improve your posture. \n2) Might provide flexibility. \n3) Can help reduce joint and especially back pain. \n4) It can help improve metabolism. </string>
+    <string name="lungs"> Benefits of Lunges \n1) Weight loss. \n2) Balance and Stability. \n3) Alignment and Symmetry. \n4) Stand Taller. </string>
+    <string name="stepping"> Benefits of stepping \n1) Reduce Belly fat. \n2) It helps to improve posture. </string>
+    <string name="abs_crunches"> Benefits of Crunches \n1) It helps to improve posture. \n2) Strong core. \n3) It helps in weight los. \n4) Strong muscles. \n5) Better cardiovascular health </string>
+    <string name="push_ups"> Benefits of push ups \n1) Burning Calories. \n2) Improving your balance and posture. </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
